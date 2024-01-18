@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapid Resolve App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #7c8582;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      margin: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #7c8582;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1> Rapid Resolve App </h1>
+</header>
+
+<section>
+  <h2>Welcome to Rapid Resolve Application</h2>
+  <p>Welcome to our innovative application! We take pride in offering a unique and tailored search
+    experience through our custom Rapid Resolve. Unlike conventional search engines,
+    our widget is designed to seamlessly interact with a specialized data storage system,
+    providing users with highly relevant and personalized results.
+    This means that you can enjoy a search experience that is not only efficient but also precisely aligned with your preferences.
+    Our advanced technology ensures that the information retrieved is drawn from a custom data storage,
+    offering a level of specificity and accuracy that goes beyond typical search functionalities.
+    Discover the power of a personalized search journey with our application and unlock a new dimension of efficiency in accessing the data that matters most to you</p>
+</section>
+<section>
+  <!-- Widget JavaScript bundle -->
+  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+  <!-- Rapid Resolve element is not visible by default -->
+  <gen-search-widget
+      configId="b5be9cd5-bb9f-4ac7-bd3a-e9b9b8371339"
+      triggerId="searchWidgetTrigger">
+  </gen-search-widget>
+
+  <!-- Element that opens the widget on click. It does not have to be an input -->
+  <button id="searchWidgetTrigger"> Click to Search </button>
+</section>
+
+<footer>
+  <p>&copy; 2024 Rapid Resolve App. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
